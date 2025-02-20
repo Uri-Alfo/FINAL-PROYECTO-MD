@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f5;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    background: red;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .amount-container, .payment-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .amount-btn, .payment-method {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .amount-btn.selected, .payment-method.selected {
+    background: #40c9db;
+    color: white;
+  }
+  
+  .payment-logo {
+    width: 50px;
+    height: 30px;
+  }
+  
+  .confirm-btn {
+    background: #40c9db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .success-message {
+    background: green;
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  

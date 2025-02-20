@@ -1,0 +1,97 @@
+.metro-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.menu-section {
+    margin-bottom: 16px;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button .chevron {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.menu-button .chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.action-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.logos {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+}

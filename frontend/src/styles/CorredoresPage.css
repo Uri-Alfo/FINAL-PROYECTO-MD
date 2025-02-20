@@ -1,0 +1,133 @@
+.corredores-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.menu-section {
+    margin-bottom: 16px;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button .chevron {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.menu-button .chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.action-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.logos {
+    position: relative;
+    height: 96px;
+    margin-top: 16px;
+}
+
+.logo {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+/* Puedes ajustar la posición de cada logo según lo necesites */
+.logo:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.logo:nth-child(2) {
+    top: 48px;
+    left: 64px;
+}
+
+.logo:nth-child(3) {
+    top: 0;
+    left: 128px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Asegura que el contenido tenga altura completa */
+}
+
+.mapa-container {
+    width: 100%;
+    height: 100%;
+}
+
+.map-wrapper {
+    flex-grow: 1; /* Permite que el mapa ocupe el espacio disponible */
+    width: 100%;
+    height: 100%;
+}
+
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Evita problemas con otros elementos */
+}

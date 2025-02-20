@@ -1,0 +1,42 @@
+.home-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-button {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-button.hovered {
+    background-color: #1565c0;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+}
+
+.news-carousel-container {
+    margin-top: 24px;
+}
