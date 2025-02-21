@@ -1,0 +1,154 @@
+.metro-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.menu-section {
+    margin-bottom: 16px;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #388e3c;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button .chevron {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.menu-button .chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.action-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.logos {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+}
+
+.table-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horario-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.horario-table th {
+    background-color: #3c9e40;
+    color: rgb(245, 245, 245);
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.horario-table td {
+    padding: 15px;
+    border: 1px solid #c1c5c3;
+    text-align: left;
+}
+
+.horario-table tbody tr:nth-child(odd) {
+    background-color: #e0f7e7;
+}
+
+.horario-table tbody tr:nth-child(even) {
+    background-color: #f0f8f3;
+}
+
+.horario-table tbody tr:hover {
+    background-color: #b5e9ca;
+}
+
+.horario-table td[rowspan] {
+    font-weight: bold;
+    background-color: rgb(178, 240, 186) !important;
+}
+
+.info-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}

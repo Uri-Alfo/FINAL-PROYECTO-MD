@@ -1,0 +1,207 @@
+.corredores-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+    position: relative;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.menu-section {
+    margin-bottom: 16px;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-button .chevron {
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.menu-button .chevron.rotated {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    margin-left: 16px;
+    margin-top: 8px;
+}
+
+.submenu-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.action-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.logos {
+    position: relative;
+    height: 96px;
+    margin-top: 16px;
+}
+
+.logo {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+}
+
+.logo:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.logo:nth-child(2) {
+    top: 48px;
+    left: 64px;
+}
+
+.logo:nth-child(3) {
+    top: 0;
+    left: 128px;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+}
+
+.table-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.horario-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.horario-table th {
+    background-color: #994c4c;
+    color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.horario-table td {
+    padding: 15px;
+    border: 1px solid #a74545;
+    text-align: left;
+}
+
+.horario-table tbody tr td:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.horario-table tbody tr td:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.horario-table .corredor-rojo {
+    background-color: #f07c7c !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.horario-table .corredor-azul {
+    background-color: #786ceb !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.horario-table .corredor-morado {
+    background-color: #7245a0 !important;
+    color: white !important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.horario-table tbody tr:hover {
+    background-color: #f8e2c8;
+}
+
+.horario-table td[rowspan] {
+    background-color: #bef785;
+    font-weight: bold;
+}
+
+.info-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recarga-container {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

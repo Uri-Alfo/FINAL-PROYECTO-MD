@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #E7E9FF;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 7000px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header {
+    background: rgb(32, 57, 113);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .amount-container, .payment-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .amount-btn, .payment-method {
+    padding: 10px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out; /* Efecto suave al cambiar el borde */
+  }
+  
+  .amount-btn.selected, .payment-method.selected {
+    background: #40c9db;
+    color: white;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+  }
+  .payment-method:hover {
+      border-color: #007bff; /* Borde azul al pasar el mouse */
+  }
+  
+  .payment-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+  }
+  
+  .confirm-btn {
+    background: #40c9db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .modal-content p {
+    font-size: 18px;
+    color: #444;
+    margin: 8px 0;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px; /* Bordes más redondeados */
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+    max-width: 400px;
+    width: 90%;
+  }
+    /* Botones dentro del modal */
+  .modal-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .modal-btn.cancel {
+    background: #ff4d4d; /* Rojo suave para cancelar */
+    color: white;
+  }
+
+  .modal-btn.confirm {
+    background: #40c9db; /* Azul vibrante para confirmar */
+    color: white;
+  }
+
+  .modal-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  .success-message {
+    background: green;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .success-message::before {
+    content: "✅"; /* Icono de check */
+    font-size: 30px;
+    display: block;
+  }
+
+  .success-message p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .success-message .retry-button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: white;
+    color: #28a745;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .success-message .retry-button:hover {
+    background-color: #218838;
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin: 15px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  

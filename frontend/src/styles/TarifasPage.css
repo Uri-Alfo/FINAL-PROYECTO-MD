@@ -1,0 +1,127 @@
+.tarifas-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde el borde izquierdo */
+}
+
+.sidebar {
+    position: relative; /* Permite posicionar elementos dentro de ella */
+    padding-top: 40px; /* Da espacio para la flecha sin mover el título demasiado */
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin-top: 0; 
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.action-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.action-button:hover,
+.action-button.hovered {
+    background-color: #135ba1;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+    overflow: auto;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.tarifas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+.tarifas-table th,
+.tarifas-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tarifas-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.tarifas-table .green {
+    background-color: #28a745;
+    color: white;
+}
+
+.tarifas-table .yellow {
+    background-color: #ffc107;
+    color: white;
+}
+
+.tarifas-table .red {
+    background-color: #dc3545;
+    color: white;
+}
+
+.tarifas-table .purple {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.tarifas-table .blue {
+    background-color: #007bff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .tarifas-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .menu-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .action-button {
+        font-size: 0.9rem;
+        padding: 10px;
+        min-width: 120px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+}

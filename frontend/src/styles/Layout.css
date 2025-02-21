@@ -1,0 +1,30 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-header {
+    background-color: #e6e9ff;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo-atu {
+    width: 200px;
+    height: auto;
+}
+
+.logo-minitran {
+    width: 200px;
+    height: auto;
+}
+
+.layout-content {
+    flex: 1;
+    padding: 24px;
+    position: relative;
+}

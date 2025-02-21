@@ -1,0 +1,121 @@
+.adquiere-tarjeta-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #e6e9ff;
+}
+
+.back-link {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.ac-button {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.action-button:hover,
+.action-button.hovered {
+    background-color: #135ba1;
+}
+
+.content {
+    flex: 1;
+    padding: 24px;
+    overflow: auto;
+}
+
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.tarjeta-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+}
+
+.tarjeta-table th,
+.tarjeta-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tarjeta-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.tarjeta-table .green {
+    background-color: #28a745;
+    color: white;
+}
+
+.tarjeta-table .yellow {
+    background-color: #ffc107;
+    color: white;
+}
+
+.tarjeta-table .red {
+    background-color: #dc3545;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .adquiere-tarjeta-page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .menu-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .action-button {
+        font-size: 0.9rem;
+        padding: 10px;
+        min-width: 120px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+}
